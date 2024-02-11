@@ -1,6 +1,14 @@
-
+:root{
+  --primary-color: white;
+  --secondary-color: #7f4f2e;  
+}
+.dark-theme{
+  --primary-color: black;
+  --secondary-color: #7f4f2e;
+  
+}
 body {
-  background-color: #ffff; 
+  background-color: var(--primary-color); 
   background-image: url("bee-pattern.png"); /* Bee pattern image */
   background-repeat: repeat; /* Repeat the pattern */
   background-position: center center; /* Center the pattern */
@@ -10,18 +18,19 @@ body {
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat Alternates', sans-serif;
-    color: #7f4f2e;
+    color: var(--secondary-color);
 }
 
 p{
     font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color)
 }
 
 header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: var(--primary-color);
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -62,14 +71,27 @@ nav a:hover{
 }
 
   .mode-toggle {
-    background-color: white;
+    background-color: var(--primary-color);
     border:none;
     padding: 0;
     color:#b65c2f ;
     text-align: center;
     cursor:pointer ;
  }
- 
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  width: 27%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  white-space: pre-wrap;
+}
   .content {
     text-align: center;
     margin-top: 50px;
@@ -197,7 +219,7 @@ nav a:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: white;
+  background-color: var(--primary-color);
   padding: 0 25px;
  }
  footer ul{
@@ -205,10 +227,12 @@ nav a:hover{
   flex-direction: column;
   list-style-type: none;    
 }
-
+.about{
+  color: var(--secondary-color)
+}
 footer a {
   text-decoration: none;
-  color: #080808;
+  color: var(--secondary-color);
   padding: 0 25px;
 }
 

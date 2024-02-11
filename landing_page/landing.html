@@ -36,41 +36,57 @@
         <title>
             Hive: Where Tasks Flourish and Time Takes Flight!
         </title>
-        
+        <script src="landing.js"></script>
 
     </head>
     
     
     <body>
         <header>
-            <div class="logo"><img src="assets/images/logo.jpg" alt="Logo"  width = "50" height = "50"></div>
+            <div class="logo"><img src="assets/images/logo.png" alt="Logo"  width = "50" height = "50"></div>
             <nav>
                 <ul>
-                    <li><a href = "#features" target = "_self">Features</a></li>
+                    <li><a href = "#footer" target = "_self">Features</a></li>
                     <li>
-                        <!-- <button class="mode-toggle">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm4 8h-8v-2h8v2z"/>
-                            </svg>
-                            Light Mode
-                          </button> -->
                         <!-- Light mode toggle  -->
-                        <button class="mode-toggle">
-                          <i class="fas fa-sun"></i>
+                        <button class="mode-toggle" id="toggle-button">
+                          <i class="fas fa-sun" id="toggle-icon"></i>
                           Light Mode
                         </button>
-                        
-                        <!-- Dark mode toggle
-                        <button class="mode-toggle">
-                          <i class="fas fa-moon"></i>
-                          Dark Mode
-                        </button> -->
                     </li>
-                    <li><a href = "#about" target = "_self">About us</a></li> 
-                    <li><a href = "signup.html" target = "_self">SignUp</a> </li>
+                    <li><a href="#" onclick="openNav()">About</a></li>
+                    <li><a href = "../signup_page/signup.html" target = "_self">SignUp</a> </li>
                 </ul>
+            
             </nav>
-            </div> 
+
+            <!-- Collapsible sidebar -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h2>About Us</h2>
+    <h3>Welcome to Hive Task Management Tool!</h3>
+<p>Hive was born out of our passion for simplicity 
+and productivity. 
+Our mission is to provide an intuitive and 
+straightforward platform for students to 
+organize their tasks efficiently. 
+With Hive, you can:
+<strong>Create Tasks</strong>: Easily add tasks, 
+deadlines, and priorities.
+<strong>Track Progress</strong>: Monitor your 
+progress and stay on top of assignments.
+<strong>Stay Focused</strong>: Receive reminders 
+and notifications to keep you on track.
+Join us on this journey to unlock your full potential. 
+Let Hive be your trusted companion in conquering your 
+academic and personal goals.
+
+
+<b>Synergy Hive</b>
+<i>Empowering Students, One Task at a Time</i>
+
+</p>
+            </div>
         </header>
     
 
@@ -83,7 +99,7 @@
             with Hive - The perfect Companion for <br>
             Busy Students
         </h1>        
-                <button class="get-started-btn">Get Started</button>
+                <button class="get-started-btn" id="get-started-btn" onclick="location.href='../signup_page/signup.html'">Get Started Now!</button>
         </div>
         
         
@@ -98,7 +114,7 @@
                     <p class="card-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                         Doloremque quaerat qui obcaecati autem error, eligendi <br>
                         </p>
-                    <span class="try-now"><a href = "signup.html" target = "_self">Try Now</a></span>
+                    <span class="try-now"><a href = "../signup_page/signup.html" target = "_self">Try Now</a></span>
                     </div>
                 </div>
             </div>
@@ -110,7 +126,7 @@
                         <p class="card-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                             Doloremque quaerat qui obcaecati autem error, eligendi <br>
                             </p>
-                    <span class="try-now"><a href = "signup.html" target = "_self">Try Now</a></span>
+                    <span class="try-now"><a href = "../signup_page/signup.html" target = "_self">Try Now</a></span>
                     </div>
                 </div>
             </div>
@@ -123,7 +139,7 @@
                         <p class="card-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                             Doloremque quaerat qui obcaecati autem error, eligendi <br>
                         </p>
-                        <span class="try-now"><a href = "signup.html" target = "_self">Try Now</a></span>
+                        <span class="try-now"><a href = "../signup_page/signup.htmll" target = "_self">Try Now</a></span>
                     </div>
                 </div>
             </div>
@@ -138,7 +154,7 @@
                     <p class="card-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                         Doloremque quaerat qui obcaecati autem error, eligendi <br>
                         </p>
-                <span class="try-now"><a href = "signup.html" target = "_self">Try Now</a></span>
+                <span class="try-now"><a href = "../signup_page/signup.html" target = "_self">Try Now</a></span>
                 </div>
             </div>
         </div>
@@ -151,7 +167,7 @@
                     <p class="card-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                         Doloremque quaerat qui obcaecati autem error, eligendi <br>
                         </p>
-                <span class="try-now"><a href = "signup.html" target = "_self">Try Now</a></span>
+                <span class="try-now"><a href = "../signup_page/signup.html" target = "_self">Try Now</a></span>
                 </div>
             </div>
         </div>
@@ -163,7 +179,7 @@
                     <p class="card-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                         Doloremque quaerat qui obcaecati autem error, eligendi <br>
                         </p>
-                <span class="try-now"><a href = "signup.html" target = "_self">Try Now</a></span>
+                <span class="try-now"><a href = "../signup_page/signup.html" target = "_self">Try Now</a></span>
                 </div>
             </div>
         </div>
@@ -184,7 +200,7 @@
             </ul>
         </div>
             
-        <div class="about">About us<br><br>
+        <div class="about" id="about">About us<br><br>
                         
                 <strong> Hive.com </strong><br>
                     1337 West 8th St #309 <br>
@@ -195,7 +211,34 @@
         </div>
                         
     </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
 
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+
+    </script>
+
+    <script>
+        var toggleButton = document.getElementById('toggle-button');
+        var toggleIcon = document.getElementById('toggle-icon');
+      
+        toggleButton.onclick = function() {
+          document.body.classList.toggle("dark-theme");
+          if (document.body.classList.contains("dark-theme")) {
+            toggleIcon.classList.remove("fa-sun");
+            toggleIcon.classList.add("fa-moon");
+            toggleButton.textContent = "Dark Mode";
+          } else {
+            toggleIcon.classList.remove("fa-moon");
+            toggleIcon.classList.add("fa-sun");
+            toggleButton.textContent = "Light Mode";
+          }
+        };
+      </script>
     </body>
 
 
