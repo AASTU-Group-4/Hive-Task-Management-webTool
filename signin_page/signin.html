@@ -19,13 +19,14 @@
 <div id="second_div">
     <form id="form">
             <h2 >Login</h2>
-            <label for="username" >Username:</label><br>
-            <input type="text" id="username" name="username" ><br>
+            <label for="username" id="userlabel" >Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter Username" ><br>
             <br>
 
-            <label for="password" >Password:</label><br>
-            <input type="password" id="password" name="password" ><br>
+            <label for="password" id="passwordlabel" >Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter Password" ><br>
             <br>
+            <h4 id="text"></h4>
             <input type="submit" value="Login" id="submit">
             <br>
             <p>Don't have an account yet? <a href="newsignup.html"> Sign up</a></p>
@@ -33,6 +34,6 @@
             <a href="forgot_password.html">Forgot Password ?</a>
         </form>
 </div>
-  
+  <script src="sign_in.js"></script>
 </body>
 </html>

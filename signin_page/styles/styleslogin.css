@@ -50,7 +50,12 @@ h2{
       border-radius: 4px;
       cursor: pointer;
 }
-
+#email_image{
+display: flex;
+align-items: center;
+margin: 0 auto;
+padding-bottom: 20px;
+}
 a{
 text-decoration: none;
 color: #a89b1f;
@@ -67,4 +72,7 @@ nav ul{
 .nav:hover{
     
     color: black;
+}
+#text{
+    text-align: center;
 }
