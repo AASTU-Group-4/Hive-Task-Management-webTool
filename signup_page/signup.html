@@ -11,7 +11,7 @@
     <div class="container">
       <div class="form-box">
         <h1>Sign Up</h1>
-        <form>
+        <form id="signupForm" onsubmit="return validateForm()">
           <div class="input-group">
             <div class="input-control">
               <input
@@ -20,17 +20,17 @@
                 name="username"
                 id="username"
               />
-              <div class="error"></div>
+              <div class="error" id="usernameError"></div>
             </div>
 
             <div class="input-control">
               <input type="email" id="email" placeholder="example@gmail.com" />
-              <div class="error"></div>
+              <div class="error" id="emailError"></div>
             </div>
 
             <div class="input-control">
               <input type="password" placeholder="Password" id="password" />
-              <div class="error"></div>
+              <div class="error" id="passwordError"></div>
             </div>
 
             <div class="input-control">
@@ -39,13 +39,11 @@
                 id="confirmPass"
                 placeholder="Confirm password"
               />
-              <div class="error"></div>
+              <div class="error" id="confirmPassError"></div>
             </div>
 
             <div class="btn">
-              <button onclick="location.href='signup2.html'" type="button">
-                Next
-              </button>
+              <button type="submit">Next</button>
             </div>
 
             <p class="pages">1 of 3</p>
