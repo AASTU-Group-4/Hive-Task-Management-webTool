@@ -13,54 +13,28 @@
     
     <div class="navBar">
         <nav>
-            <img src="images/logoo.jpg" width="100px" height="80px">
+          <img src="images/logoo.jpg" width="100px" height="80px">
             <ul>
                 <li><a href="../landing_page/landing.html">Home</a></li>
-                <li>  <a href="">Reminder </i></a></li>
-                <li><a href="../signin_page/signin.html"></a>Note</li>
-                <li><a href="../signin_page/signin.html"></a>Todo</li>
+                <li>  <a href="../featues_page/reminder/reminder.html">Reminder </i></a></li>
+                <li><a href="../featues_page/note.html"></a>Note</li>
+                <li><a href="../featues_page/todo/todolist.html"></a>Todo</li>
 
             </ul>
-            <img src="images/profile_pic.jpeg" alt="profile" width="125px" height="100px">
-
-            <button  id="bgbtn" onclick="changeBackgroundColor()">🌚 Dark mode</button>
-        </nav><!DOCTYPE html>
-        <html lang="en">
-        
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" href="images/logo_icon.ico" type="image/x-icon">
-            <link rel="stylesheet" href="../featues_page/style/note.css">
-            <title>Hive</title>
-        </head>
-        
-        <body>
-            
-            <div class="navBar">
-                <nav>
-                    <img src="../featues_page/images/logo.png" width="100px" height="80px">
-                    <ul>
-                        <li><a href="../landing_page/landing.html">Home</a></li>
-                        <li><a href="">Reminder</a></li>
-                        <li><a href="../signin_page/signin.html">Note</a></li>
-                        <li><a href="../signin_page/signin.html">Todo</a></li>
-                    </ul>
-                    <button id="bgbtn" onclick="toggleDarkMode()">🌚 Dark mode</button>
-
-                    <img src="images/profile_pic.jpeg" alt="profile" width="125px" height="100px">
-                </nav>
-            </div>
-        
-            <div class="txt">
+          <img src="images/profile_pic.jpeg" alt="profile" width="125px" height="100px">
+          <button  id="bgbtn" onclick="changeBackgroundColor()">🌚 Dark mode</button>
+        </nav>
+    </div>
+    <div class="txt">
                 <textarea rows="25" cols="70" placeholder="Type your notes here..."></textarea>
                 <br>
                 <button>Save</button>
                 <button>Clear</button>
-            </div>
+    </div>
         
-            <script>
-                function toggleDarkMode() {
+    <script>
+        function toggleDarkMode() 
+        {
                     var body = document.body;
                     var navBar = document.querySelector('.navBar');
                     var txtArea = document.querySelector('.txt textarea');
@@ -69,10 +43,9 @@
                     body.classList.toggle('dark');
                     navBar.classList.toggle('dark');
                     txtArea.classList.toggle('dark');
-                }
-            </script>
-      
-      
+         }
+    </script>
+    
 </body>
 
 </html>
