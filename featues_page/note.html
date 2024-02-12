@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo_icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../featues_page/style/note.css">
+    <link rel="stylesheet" type="text/css" href="style/styleMain.css">
     <title>Hive</title>
 </head>
-
 <body>
-    
-    <div class="navBar">
-        <nav>
-          <img src="images/logoo.jpg" width="100px" height="80px">
-            <ul>
-                <li><a href="../landing_page/landing.html">Home</a></li>
-                <li>  <a href="../featues_page/reminder/reminder.html">Reminder </i></a></li>
-                <li><a href="../featues_page/note.html"></a>Note</li>
-                <li><a href="../featues_page/todo/todolist.html"></a>Todo</li>
-
-            </ul>
-          <img src="images/profile_pic.jpeg" alt="profile" width="125px" height="100px">
-          <button  id="bgbtn" onclick="changeBackgroundColor()">🌚 Dark mode</button>
-        </nav>
+    <header class="sticky-header">
+        <div class="logo">
+            <img src="images/logo_no_bg.png" alt="logo">
+        </div>
+        <div class="user-info">
+            <h1>User Name</h1>
+            <img src="images/profile_pic.jpeg" alt="profile">
+        </div>
+    </header>
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="../main_page/main.html">HOME</a></li>
+            <li><a href="todo.html">To-do</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="note.html">Take Note</a></li>
+            <li><a href="reminder.html">Reminder</a></li>
+        </ul>
+    </nav>
+    <button class="toggle-menu" onclick="toggleMenu()">Toggle Menu</button>
+    <div class="content">
+        <textarea rows="10" placeholder="Type your notes here..."></textarea>
+        <div class="buttons">
+            <button class="save">Save</button>
+            <button class="clear">Clear</button>
+        </div>
     </div>
-    <div class="txt">
-                <textarea rows="25" cols="70" placeholder="Type your notes here..."></textarea>
-                <br>
-                <button>Save</button>
-                <button>Clear</button>
-    </div>
-        
-    <script>
-        function toggleDarkMode() 
-        {
-                    var body = document.body;
-                    var navBar = document.querySelector('.navBar');
-                    var txtArea = document.querySelector('.txt textarea');
-                    
-                    // Toggle dark mode by toggling the 'dark' class on body and navbar
-                    body.classList.toggle('dark');
-                    navBar.classList.toggle('dark');
-                    txtArea.classList.toggle('dark');
-         }
-    </script>
-    
+    <script src="script/script.js"></script>
 </body>
-
 </html>
