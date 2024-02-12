@@ -11,10 +11,11 @@
   <body>
     <div class="container">
       <div class="form-box">
-        <form>
+        <form id="signupForm" onsubmit="return validateForm()">
           <div class="input-control">
             <label for="phone">Phone : </label><br />
             <input type="tel" id="phone" placeholder="Phone number" />
+            <div class="error" id="phoneError"></div>
             
             <label for="birth-date">Birth Date :</label><br />
             <input
@@ -23,7 +24,7 @@
               name="birthDate"
               placeholder="Birth Date"         
             />
-            <div class="error"></div>
+            <div class="error" id="birthDateError"></div>
           </div>
           <div class="radio input-control" >
             <p>Gender :</p>
@@ -33,19 +34,16 @@
             <label for="gender2">Female</label>
             <input type="radio" id="gender3" name="gender" />
             <label for="gender3">Other</label>
-            <div class="error"></div>
-  
+            <div class="error" id="genderError"></div>
           </div>
           <div class="links">
-            <button onclick="location.href='signup.html'" type="button">Back</button>
-            <button onclick="location.href='signup3.html'" type="button">Next</button>
+            <button type="button" onclick="location.href='signup.html'">Back</button>
+            <button type="submit">Next</button>
           </div>
-  
-          </div>
-            <p class="pages">2 of 3</p>
+          <p class="pages">2 of 3</p>
         </form>
       </div>
     </div>
-    <script defer src="signup.js"></script>
+    <script defer src="signup2.js"></script>
   </body>
 </html>
