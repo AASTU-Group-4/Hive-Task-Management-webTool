@@ -72,6 +72,9 @@
   border: 2px dashed #ffffff;
   outline: none;
 }
+.button{
+  background-color: #f9f470;
+}
 button.button {
   -moz-user-select: none;
   -ms-user-select: none;
