@@ -1,78 +1,68 @@
-body{
-    margin: 0,auto;
+body {
+    margin: 0, auto;
     background-color: #f2f2f2;
-}
-#first_div{
-   background-color: white;
-  margin-bottom: 50px;
-  display: flex;
-    justify-content: space-between;
-    padding: 5px;
-}
-#second_div{
- background-color: #fff;
- max-width: 400px;
-
- margin: 0px auto;
- padding: 20px;
-font-weight: bold;
-}
-#form{
+    background: url("../images/photo_2023-12-20_10-24-24.jpg") no-repeat center
+      center/cover;
+  }
+  
+  #second_div {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 5px;
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  #form {
     padding: 15px;
-}
-#password{
+  }
+  #password {
     width: 100%;
     padding: 10px;
-    
-}
-h2{
+  }
+  h2 {
     font-weight: bold;
     text-align: center;
-}
-#username{
+  }
+  #username {
     width: 100%;
     padding: 10px;
-}
-#submit{
+  }
+  #submit {
     width: 100%;
     padding: 10px;
     background-color: #a89b1f;
     border: 0;
     cursor: pointer;
     border-radius: 4px;
-}
-#reset{
+  }
+  #reset {
     width: 100%;
-      padding: 8px;
-      background-color: #a89b1f;
-      color: black;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-}
-#email_image{
-display: flex;
-align-items: center;
-margin: 0 auto;
-padding-bottom: 20px;
-}
-a{
-text-decoration: none;
-color: #a89b1f;
-padding: 10px;
-}
-#email{
+    padding: 8px;
+    background-color: #a89b1f;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #email_image {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #a89b1f;
+    padding: 10px;
+  }
+  #email {
     width: 100%;
     padding: 10px;
-}
-nav ul{
-    list-style-type: none;
-    display: flex;
-}
-.nav:hover{
-    
-    color: black;
-}
-#text{
+  }
+  
+  #text {
     text-align: center;
-}
+  }
