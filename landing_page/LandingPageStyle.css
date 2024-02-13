@@ -1,5 +1,5 @@
 :root{
-  --primary-color: white;
+  --primary-color: #faf6f0;
   --secondary-color: #7f4f2e;  
 }
 .dark-theme{
@@ -109,7 +109,7 @@ nav a:hover{
     padding: 10px 20px;
     font-size: 18px;
     background-color:#b65c2f ;
-    color: white ;
+    color: #f8f0e2 ;
     border: none;
     border-radius: 5px;
     cursor: pointer;
