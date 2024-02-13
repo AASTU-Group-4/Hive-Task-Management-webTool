@@ -12,8 +12,8 @@
 }
 .sticky {
   background: linear-gradient(to left bottom, #d4fc78, #f9f470);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  color:#da9f09;
+  box-shadow: 0 0 20px rgba(245, 199, 98, 0.3);
+  color:rgb(254, 182, 74);
   cursor: grab;
   display: inline-block;
   position: absolute;
@@ -21,8 +21,7 @@
 }
 .sticky h3,
 .sticky p {
-  /* color: #0065b3; */
-  color: #da9f09;
+  color: black;
   pointer-events: none;
 }
 .sticky h3 {
@@ -57,7 +56,7 @@
 }
 .sticky-form input,
 .sticky-form textarea {
-  background-color: rgb(247, 247, 119);
+  background-color:  #f8f0e2;
   background-clip: padding-box;
   border: 2px dashed 2px hsl(32, 100%, 45%);
   border-radius: 0.25rem;

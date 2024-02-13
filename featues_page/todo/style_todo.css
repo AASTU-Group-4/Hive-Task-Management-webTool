@@ -13,7 +13,7 @@ body {
     margin: 50px auto;
     padding: 20px;
     background-color:#ecab39;
-    border-radius: 8px;
+    border-radius: 8px brown;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     justify-content: center;
   }
@@ -22,6 +22,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     justify-content: center;
+   
   }
   .middle h1{
     display: flex;
