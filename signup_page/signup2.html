@@ -3,30 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images/hiveLogoDark.jpg"/>
+    <link rel="icon" type="image/x-icon" href="images/hiveLogoDark.jpg" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/d1b61fd0e8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d1b61fd0e8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
       <div class="form-box">
         <form id="signupForm" onsubmit="return validateForm()">
           <div class="input-control">
-            <label for="phone">Phone : </label><br />
+            <label for="phone">Phone :</label><br />
             <input type="tel" id="phone" placeholder="Phone number" />
             <div class="error" id="phoneError"></div>
-            
+
             <label for="birth-date">Birth Date :</label><br />
             <input
               type="date"
               id="birth-date"
               name="birthDate"
-              placeholder="Birth Date"         
+              placeholder="Birth Date"
             />
             <div class="error" id="birthDateError"></div>
           </div>
-          <div class="radio input-control" >
+          <div class="radio input-control">
             <p>Gender :</p>
             <input type="radio" id="gender1" name="gender" />
             <label for="gender1">Male</label>
@@ -37,7 +40,9 @@
             <div class="error" id="genderError"></div>
           </div>
           <div class="links">
-            <button type="button" onclick="location.href='signup.html'">Back</button>
+            <button type="button" onclick="location.href='signup.html'">
+              Back
+            </button>
             <button type="submit">Next</button>
           </div>
           <p class="pages">2 of 3</p>

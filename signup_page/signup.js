@@ -1,51 +1,53 @@
 function validateForm() {
-  var username = document.getElementById("username").value.trim();
-  var email = document.getElementById("email").value.trim();
-  var password = document.getElementById("password").value.trim();
-  var confirmPass = document.getElementById("confirmPass").value.trim();
+  // Retrieve form elements
+  var username = document.getElementById("username");
+  var email = document.getElementById("email");
+  var password = document.getElementById("password");
+  var confirmPass = document.getElementById("confirmPass");
 
+  // Retrieve error message elements
   var usernameError = document.getElementById("usernameError");
   var emailError = document.getElementById("emailError");
   var passwordError = document.getElementById("passwordError");
   var confirmPassError = document.getElementById("confirmPassError");
 
+  // Reset error messages
   usernameError.innerHTML = "";
   emailError.innerHTML = "";
   passwordError.innerHTML = "";
   confirmPassError.innerHTML = "";
 
-  var isValid = true;
-
-  if (username === "") {
+  // Validate username
+  if (username.value.trim() === "") {
     usernameError.innerHTML = "Username is required";
-    isValid = false;
+    return false;
   }
 
-  if (email === "") {
+  // Validate email
+  if (email.value.trim() === "") {
     emailError.innerHTML = "Email is required";
-    isValid = false;
-  } else if (!isValidEmail(email)) {
-    emailError.innerHTML = "Invalid email address";
-    isValid = false;
+    return false;
   }
 
-  if (password === "") {
+  // Validate password
+  if (password.value.trim() === "") {
     passwordError.innerHTML = "Password is required";
-    isValid = false;
+    return false;
   }
 
-  if (confirmPass === "") {
-    confirmPassError.innerHTML = "Please confirm password";
-    isValid = false;
-  } else if (confirmPass !== password) {
+  // Validate confirm password
+  if (confirmPass.value.trim() === "") {
+    confirmPassError.innerHTML = "Confirm password is required";
+    return false;
+  }
+
+  // Check if password matches confirm password
+  if (password.value.trim() !== confirmPass.value.trim()) {
     confirmPassError.innerHTML = "Passwords do not match";
-    isValid = false;
+    return false;
   }
 
-  return isValid;
-}
-
-function isValidEmail(email) {
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
+  // If form is valid, navigate to the next page
+  window.location.href = "signup2.html";
+  return false; // Prevent form submission
 }

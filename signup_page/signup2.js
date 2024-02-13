@@ -1,35 +1,37 @@
 function validateForm() {
-    var phone = document.getElementById("phone").value.trim();
-    var birthDate = document.getElementById("birth-date").value.trim();
-    var gender1 = document.getElementById("gender1");
-    var gender2 = document.getElementById("gender2");
-    var gender3 = document.getElementById("gender3");
-  
-    var phoneError = document.getElementById("phoneError");
-    var birthDateError = document.getElementById("birthDateError");
-    var genderError = document.getElementById("genderError");
-  
-    phoneError.innerHTML = "";
-    birthDateError.innerHTML = "";
-    genderError.innerHTML = "";
-  
-    var isValid = true;
-  
-    if (phone === "") {
-      phoneError.innerHTML = "Phone number is required";
-      isValid = false;
-    }
-  
-    if (birthDate === "") {
-      birthDateError.innerHTML = "Birth date is required";
-      isValid = false;
-    }
-  
-    if (!gender1.checked && !gender2.checked && !gender3.checked) {
-      genderError.innerHTML = "Please select your gender";
-      isValid = false;
-    }
-  
-    return isValid;
+  document.getElementById("phoneError").textContent = "";
+  document.getElementById("birthDateError").textContent = "";
+  document.getElementById("genderError").textContent = "";
+
+  var phoneInput = document.getElementById("phone").value;
+  var birthDateInput = document.getElementById("birth-date").value;
+  var genderInputs = document.querySelectorAll('input[name="gender"]');
+
+  if (!phoneInput.match(/^\d{10}$/)) {
+    document.getElementById("phoneError").textContent =
+      "Please enter a valid phone number (10 digits).";
+    return false;
   }
-  
+
+  if (!birthDateInput) {
+    document.getElementById("birthDateError").textContent =
+      "Please enter your birth date.";
+    return false;
+  }
+
+  var genderSelected = false;
+  genderInputs.forEach(function (input) {
+    if (input.checked) {
+      genderSelected = true;
+    }
+  });
+  if (!genderSelected) {
+    document.getElementById("genderError").textContent =
+      "Please select your gender.";
+    return false;
+  }
+
+
+  window.location.href = "signup3.html";
+  return false;
+}

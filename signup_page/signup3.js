@@ -1,25 +1,23 @@
 function validateForm() {
-    var university = document.getElementById("university").value.trim();
-    var field = document.getElementById("field").value;
-  
-    var universityError = document.getElementById("universityError");
-    var fieldError = document.getElementById("fieldError");
-  
-    universityError.innerHTML = "";
-    fieldError.innerHTML = "";
-  
-    var isValid = true;
-  
-    if (university === "") {
-      universityError.innerHTML = "University is required";
-      isValid = false;
-    }
-  
-    if (field === " ") {
-      fieldError.innerHTML = "Please select your field";
-      isValid = false;
-    }
-  
-    return isValid;
+  document.getElementById("universityError").textContent = "";
+  document.getElementById("fieldError").textContent = "";
+
+  var universityInput = document.getElementById("university").value;
+  var fieldInput = document.getElementById("field").value;
+
+  if (!universityInput) {
+    document.getElementById("universityError").textContent =
+      "Please enter your university.";
+    return false;
   }
-  
+
+  if (fieldInput === " ") {
+    document.getElementById("fieldError").textContent =
+      "Please select your field.";
+    return false;
+  }
+
+  alert("Sign up successful! Click OK to continue to the main page");
+  window.location.href = "../Main_Page/main_page.html";
+  return false;
+}
