@@ -1,40 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo_icon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="/featues_page/style/styleMain.css">
-    
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" href="style/note.css">
     <title>Hive</title>
 </head>
 <body>
-    <header class="sticky-header">
-        <div class="logo">
-            <img src="images/logo_no_bg.png" alt="logo">
-        </div>
-        <div class="user-info">
-            <h1>User Name</h1>
-            <img src="images/profile_pic.jpeg" alt="profile">
-        </div>
-    </header>
+
+<div class="grid-container">
+  <div class="header">
+    <div class="logo">
+        <img src="images/logo_no_bg.png" alt="logo">
+    </div>
+    <div class="user-info">
+        <h1>User Name</h1>
+        <img src="images/profile_pic.png" alt="profile">
+    </div>
+  </div>
+  <div class="menu">
     <nav class="menu" id="menu">
         <ul>
-            <li><a href="/Main_Page/main_page.html">HOME</a></li>
-            <li><a href="/featues_page/todo/todolist.html">To-do</a></li>
-            <li><a href="/featues_page/calendar.html">Calendar</a></li>
-            <li><a href="/featues_page/note.html">Take Note</a></li>
-            <li><a href="/featues_page/reminder/reminder.html">Reminder</a></li>
+            <li><a href="../main_page/main.html">HOME</a></li>
+            <li><a href="todo/todolist.html">To-do</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="note.html">Take Note</a></li>
+            <li><a href="reminder/reminder.html">Reminder</a></li>
         </ul>
     </nav>
-    <button class="toggle-menu" onclick="toggleMenu()">Toggle Menu</button>
-    <div class="content">
-        <textarea rows="10" placeholder="Type your notes here..."></textarea>
-        <div class="buttons">
-            <button class="save">Save</button>
-            <button class="clear">Clear</button>
+  </div>
+
+  <div class="middle" style="background-color:#bbb;">
+    <div id="stickies-container"></div>
+        <div class="sticky-form">
+            <label for="stickytitle">Title for your sticky:</label>
+            <input type="text" name="stickytitle" id="stickytitle" />
+            <label for="stickytext">Write something down:</label>
+            <textarea
+                name="stickytext"
+                id="stickytext"
+                cols="24"
+                rows="10"
+            ></textarea>
+            <button class="button" id="createsticky">Stick it!</button>
         </div>
-    </div>
-    <script src="/featues_page/script/script.js"></script>
+    </div> 
+</div>
+<script src="script/scriptnote.js"></script>
+
 </body>
 </html>
+
+

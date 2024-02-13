@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logo_icon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="/featues_page/style/styleMain.css">
-    <link rel="stylesheet" href="/featues_page/todo/style_todo.css">
-    <title>Hive</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style_todo.css">
+  <link rel="icon" href="images/logo_icon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
+  <title>Hive</title>
 </head>
 <body>
-    <header class="sticky-header">
-        <div class="logo">
-            <img src="images/logo_no_bg.png" alt="logo">
-        </div>
-        <div class="user-info">
-            <h1>User Name</h1>
-            <img src="images/profile_pic.jpeg" alt="profile">
-        </div>
-    </header>
+
+<div class="grid-container">
+  <div class="header">
+    <div class="logo">
+        <img src="../images/logo_no_bg.png" alt="logo">
+    </div>
+    <div class="user-info">
+        <h1>User Name</h1>
+        <img src="../images/profile_pic.png" alt="profile">
+    </div>
+  </div>
+  <div class="menu">
     <nav class="menu" id="menu">
         <ul>
-          <li><a href="/Main_Page/main_page.html">HOME</a></li>
-          <li><a href="/featues_page/todo/todolist.html">To-do</a></li>
-          <li><a href="/featues_page/calendar.html">Calendar</a></li>
-          <li><a href="/featues_page/note.html">Take Note</a></li>
-          <li><a href="/featues_page/reminder/reminder.html">Reminder</a></li>
+            <li><a href="../../main_page/main.html">HOME</a></li>
+            <li><a href="todolist.html">To-do</a></li>
+            <li><a href="../calendar.html">Calendar</a></li>
+            <li><a href="../note.html">Take Note</a></li>
+            <li><a href="../reminder/reminder.html">Reminder</a></li>
         </ul>
     </nav>
-    <div class="container">
-      <h1>Todo List</h1>
-      <div class="input-group">
-        <input type="text" id="taskInput" placeholder="Enter your task">
-        <button onclick="addTask()">Add Task</button>
-      </div>
-      <ul id="taskList"></ul>
+  </div>
+
+  <div class="middle" style="background-color:#bbb;"><h1>Todo List</h1>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter your task">
+      <button onclick="addTask()">Add Task</button>
     </div>
-    <script src="/featues_page/todo/index_.js"></script>
-</body> </html>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="index_.js"></script>
+</div>
+
+</body>
+</html>
+
+
