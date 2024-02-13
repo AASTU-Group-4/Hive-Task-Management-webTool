@@ -5,24 +5,30 @@ body {
   }
   h1,p, h2,h3{
     color: #da9f09;
+    justify-content: center;
   }
   
   .container {
-    max-width: 600px;
+    max-width: 100px;
     margin: 50px auto;
     padding: 20px;
-    background-color:#f8f0e2;
+    background-color:#ecab39;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
   }
   
   .container h1 {
     text-align: center;
     margin-bottom: 20px;
+    justify-content: center;
   }
-  
+  .middle h1{
+    display: flex;
+  }
   .input-group {
     display: flex;
+  justify-content: center;
   }
   
   .input-group input[type="text"] {
@@ -31,6 +37,9 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    max-width: 300px;
+    justify-content: center;
+
   }
   
   .input-group button {

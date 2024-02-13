@@ -8,12 +8,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     margin: 0; /* Added to reset body margin */
+    background-color: #f8f0e2;
 }
 
 /* Style the header */
 .header {
     grid-area: header;
-    background-color: #f1f1f1;
+    background-color: #f8f0e2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +67,7 @@ body {
 
 .menu {
     grid-area: menu;
-    background-color: #979797;
+    background-color: burlywood;
     text-align: center;
     display: flex;
     justify-content: center; /* Align items horizontally */
