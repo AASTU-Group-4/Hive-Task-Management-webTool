@@ -12,7 +12,9 @@ nav {
     border-bottom: 1px solid #ffbf00;
 
 }
-
+h1,p, h2,h3{
+    color: #da9f09;
+  }
 nav a {
 padding: 20px;
 color: #8a5208;
@@ -43,6 +45,7 @@ height: 55px;
     position: fixed;
     top: 100px;
     left: 500px;
+    color:#da9f09;
 }
 .dark {
     background-color: #222; 
