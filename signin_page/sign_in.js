@@ -15,12 +15,17 @@ function validateForm() {
   
     if (username === demousername && password === demoPassword) {
       turnblack();
-      return true;
+      window.location.href="../Main_Page/main_page.html"
+       return true;
+      
     }
      else {
        turnred();
        return false;
     }
+
+    
+    
   }
   
   document.getElementById("submit").addEventListener("click", function(event) {
@@ -48,4 +53,5 @@ function validateForm() {
     document.getElementById("passwordlabel").style.color="black"
 
   }
+
   
