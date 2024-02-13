@@ -6,7 +6,7 @@ body, h1, h2, h3, p, ul {
 body {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f8f0e2;
+    background-color:rgb(229, 200, 161);
 }
 
 h1, h2, h3, p {
@@ -30,7 +30,7 @@ h2 {
         justify-content: space-between;
         margin: 0 auto;
         width: 100%;
-        background-color: #fff;
+        background-color:  #f8f0e2;;
         border-bottom: 1px solid #ffbf00;
     
     }
@@ -73,7 +73,7 @@ nav a:hover {
   
 .side {
     width: 15%;
-    background-color: #f8f0e2;
+    background-color:rgb(229, 200, 161);
     padding: 50px;
 }
 
